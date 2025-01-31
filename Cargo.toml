@@ -1,0 +1,10 @@
+[package]
+name = "mpris-poc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures-util = "0.3.31"
+serde = { version = "1.0.217", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+zbus = { version = "5", default-features = false, features = ["tokio"] }
